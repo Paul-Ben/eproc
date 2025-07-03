@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -173,4 +173,466 @@
             </div>
         </div>
     </body>
-</html>
+</html> --}}
+@extends('layouts.landing')
+@section('content')
+    <main>
+        <!-- Hero Section with Full-width Stats -->
+        <section class="relative bg-[#4BA35A] text-white overflow-hidden">
+            <!-- Background Image with Overlay -->
+            <div class="absolute inset-0">
+                <img src="/assets/images/image-1.png" alt="Contractors" class="object-cover w-full h-full opacity-90" />
+                <div class="absolute inset-0"></div>
+            </div>
+
+            <!-- Hero Content -->
+            <div class="relative z-10 max-w-6xl px-6 pt-24 pb-40 mx-auto text-center">
+                <h1 class="font-sora font-bold text-3xl md:text-5xl leading-[120%] tracking-[0% text-[#FFFFFF]">
+                    Transparent Procurement<br />for a Better Benue
+                </h1>
+                <p
+                    class="mt-4 text-base md:text-[19px] text-white/90 max-w-xl mx-auto leading-[120%] tracking-[0% text-[#FFFFFF] font-sora font-normal">
+                    Access government tenders, register as a contractor, and track your
+                    applications
+                </p>
+
+                <!-- Buttons -->
+                <div class="flex flex-col justify-center gap-4 mt-8 sm:flex-row">
+                    <a href="#"
+                        class="px-6 py-3 bg-green-800 text-white rounded-full hover:bg-gray-100 transition hover:text-green-800 font-jaka font-normal font-base leading-[22.4px]">
+                        View Tenders
+                    </a>
+                    <a href="#"
+                        class="px-6 py-3 bg-white/20 border border-white text-[#FFFFFF] rounded-full hover:bg-white hover:text-green-800 transition font-jaka font-normal font-base leading-[22.4px]">
+                        Become a Contractor →
+                    </a>
+                </div>
+            </div>
+
+            <!-- Full-width Stats Section -->
+            <div class="relative z-10 w-full">
+                <div
+                    class="bg-[#FFFFFFCC] backdrop-blur-md rounded-t-[80px] shadow-md py-8 px-6 md:px-20 flex flex-col md:flex-row justify-center items-center gap-6 md:gap-24 text-center">
+                    <div>
+                        <p class="text-[33px] font-sora font-normal leading-[120%] tracking-[0%] text-green-800">
+                            3000+
+                        </p>
+                        <p class="mt-1 font-jaka font-normal text-base leading-[22.4px] tracking-[0%] text-[#232323]">
+                            Registered Contractors
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-[33px] font-sora font-normal leading-[120%] tracking-[0%] text-green-800">
+                            100+
+                        </p>
+                        <p class="mt-1 font-jaka font-normal text-base leading-[22.4px] tracking-[0%] text text-[#232323]">
+                            Active Tenders
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-[33px] font-sora font-normal leading-[120%] tracking-[0%] text-green-800">
+                            ₦57.6bn+
+                        </p>
+                        <p class="mt-1 font-jaka font-normal text-base leading-[22.4px] tracking-[0%] text text-[#232323]">
+                            Value of Awards
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-5xl mx-auto mt-24">
+            <h2 class="font-sora font-bold text-[40px] leading-[120%] tracking-normal mb-2 text-[#232323]">
+                Recent Tenders
+            </h2>
+            <p class="font-jaka font-normal text-base leading-[22.4px] tracking-[0%] text-[#535353] mb-6">
+                Stay informed on the most recent open tender
+
+                <!-- Tender Card -->
+            </p>
+
+            <div class="space-y-6">
+                <!-- Card 1 -->
+                <div class="flex flex-col overflow-hidden bg-white rounded-lg md:flex-row">
+                    <div class="md:w-3/4 p-6 border-[1px] border-gray-300">
+                        <h3 class="font-sora font-bold text-[23px] leading-[120%] tracking-[0%] text-[#535353] mb-1">
+                            Road Rehabilitation in Gboko LGA
+                        </h3>
+                        <p
+                            class="font-jaka font-normal text-base leading-[22.4px] tracking-[0%] text-[#949494] mb-4 max-w-xl">
+                            Rehabilitation of key access roads in Gboko LGA to improve rural
+                            mobility and logistics, including grading, drainage, and resurfacing.
+                        </p>
+                        <div class="flex flex-col mb-4 sm:flex-row sm:items-center gap-x-8 gap-y-3">
+                            <div>
+                                <p class="font-jaka font-normal text-base leading-[22.4px] tracking-[0%] text-[#949494]">
+                                    Deadline:
+                                </p>
+                                <p class="font-sora font-normal text-[19px] leading-[26.6px] tracking-[0%] text-[#535353]">
+                                    30 June 2025
+                                </p>
+                            </div>
+                            <div>
+                                <p class="font-jaka font-normal text-base leading-[22.4px] tracking-[0%] text-[#949494]">
+                                    Contract Category:
+                                </p>
+                                <p class="font-sora font-normal text-[19px] leading-[26.6px] tracking-[0%] text-[#535353]">
+                                    Civil Engineering / Road Construction
+                                </p>
+                            </div>
+                        </div>
+                        <button
+                            class="inline-flex items-center gap-2 bg-[#535353] text-white px-4 py-2 rounded hover:bg-gray-700 font-jaka text-base leading-[22.4px] tracking-[0%] font-normal">
+                            Apply Now
+                            <span>
+                                <img src="../assets/images/solar_arrow-right-up-broken.png" alt=""
+                                    class="w-4 h-4" />
+                            </span>
+                        </button>
+                    </div>
+                    <div class="md:w-1/4">
+                        <img src="../assets/images/road.png" alt="Road Rehabilitation" class="object-cover w-full h-full" />
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="flex flex-col overflow-hidden bg-white rounded-lg md:flex-row">
+                    <div class="md:w-3/4 p-6 border-[1px] border-gray-300">
+                        <h3 class="font-sora font-bold text-[23px] leading-[120%] tracking-[0%] text-[#535353] mb-1">
+                            Supply of Medical Equipment to General Hospitals
+                        </h3>
+                        <p
+                            class="font-jaka font-normal text-base leading-[22.4px] tracking-[0%] text-[#949494] mb-4 max-w-xl">
+                            Procurement and delivery of surgical and diagnostic medical equipment to
+                            general hospitals across Benue State.
+                        </p>
+                        <div class="flex flex-col mb-4 sm:flex-row sm:items-center gap-x-8 gap-y-3">
+                            <div>
+                                <p class="font-jaka font-normal text-base leading-[22.4px] tracking-[0%] text-[#949494]">
+                                    Deadline:
+                                </p>
+                                <p class="font-sora font-normal text-[19px] leading-[26.6px] tracking-[0%] text-[#535353]">
+                                    15 July 2025
+                                </p>
+                            </div>
+                            <div>
+                                <p class="font-jaka font-normal text-base leading-[22.4px] tracking-[0%] text-[#949494]">
+                                    Contract Category:
+                                </p>
+                                <p class="font-sora font-normal text-[19px] leading-[26.6px] tracking-[0%] text-[#535353]">
+                                    Medical Equipment Suppliers / Biomedical Engineering
+                                </p>
+                            </div>
+                        </div>
+                        <button
+                            class="inline-flex items-center gap-2 bg-[#535353] text-white px-4 py-2 rounded hover:bg-gray-700 font-jaka text-base leading-[22.4px] tracking-[0%] font-normal">
+                            Apply Now
+                            <span>
+                                <img src="../assets/images/solar_arrow-right-up-broken.png" alt=""
+                                    class="w-4 h-4" />
+                            </span>
+                        </button>
+                    </div>
+                    <div class="md:w-1/4">
+                        <img src="../assets/images/hospital.png" alt="Road Rehabilitation"
+                            class="object-cover w-full h-full" />
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="flex flex-col overflow-hidden bg-white rounded-lg md:flex-row">
+                    <div class="md:w-3/4 p-6 border-[1px] border-gray-300">
+                        <h3 class="font-sora font-bold text-[23px] leading-[120%] tracking-[0%] text-[#535353] mb-1">
+                            Construction of Boreholes in Rural Communities
+                        </h3>
+                        <p
+                            class="font-jaka font-normal text-base leading-[22.4px] tracking-[0%] text-[#949494] mb-4 max-w-xl">
+                            Drilling and installation of solar-powered boreholes in 25 rural
+                            communities to provide access to clean water.
+                        </p>
+                        <div class="flex flex-col mb-4 sm:flex-row sm:items-center gap-x-8 gap-y-3">
+                            <div>
+                                <p class="font-jaka font-normal text-base leading-[22.4px] tracking-[0%] text-[#949494]">
+                                    Deadline:
+                                </p>
+                                <p class="font-sora font-normal text-[19px] leading-[26.6px] tracking-[0%] text-[#535353]">
+                                    25 May 2025
+                                </p>
+                            </div>
+                            <div>
+                                <p class="font-jaka font-normal text-base leading-[22.4px] tracking-[0%] text-[#949494]">
+                                    Contract Category:
+                                </p>
+                                <p class="font-sora font-normal text-[19px] leading-[26.6px] tracking-[0%] text-[#535353]">
+                                    Water Engineering / Borehole Drilling Services
+                                </p>
+                            </div>
+                        </div>
+                        <button
+                            class="inline-flex items-center gap-2 bg-[#535353] text-white px-4 py-2 rounded hover:bg-gray-700 font-jaka text-base leading-[22.4px] tracking-[0%] font-normal">
+                            Apply Now
+                            <span>
+                                <img src="../assets/images/solar_arrow-right-up-broken.png" alt=""
+                                    class="w-4 h-4" />
+                            </span>
+                        </button>
+                    </div>
+                    <div class="md:w-1/4">
+                        <img src="../assets/images/borehole.png" alt="Road Rehabilitation"
+                            class="object-cover w-full h-full" />
+                    </div>
+                </div>
+                <div class="flex flex-col overflow-hidden bg-white rounded-lg md:flex-row">
+                    <div class="md:w-3/4 p-6 border-[1px] border-gray-300">
+                        <h3 class="font-sora font-bold text-[23px] leading-[120%] tracking-[0%] text-[#535353] mb-1">
+                            Construction of Boreholes in Rural Communities
+                        </h3>
+                        <p
+                            class="font-jaka font-normal text-base leading-[22.4px] tracking-[0%] text-[#949494] mb-4 max-w-xl">
+                            Drilling and installation of solar-powered boreholes in 25 rural
+                            communities to provide access to clean water.
+                        </p>
+                        <div class="flex flex-col mb-4 sm:flex-row sm:items-center gap-x-8 gap-y-3">
+                            <div>
+                                <p class="font-jaka font-normal text-base leading-[22.4px] tracking-[0%] text-[#949494]">
+                                    Deadline:
+                                </p>
+                                <p class="font-sora font-normal text-[19px] leading-[26.6px] tracking-[0%] text-[#535353]">
+                                    25 May 2025
+                                </p>
+                            </div>
+                            <div>
+                                <p class="font-jaka font-normal text-base leading-[22.4px] tracking-[0%] text-[#949494]">
+                                    Contract Category:
+                                </p>
+                                <p class="font-sora font-normal text-[19px] leading-[26.6px] tracking-[0%] text-[#535353]">
+                                    Water Engineering / Borehole Drilling Services
+                                </p>
+                            </div>
+                        </div>
+                        <button
+                            class="inline-flex items-center gap-2 bg-[#535353] text-white px-4 py-2 rounded hover:bg-gray-700 font-jaka text-base leading-[22.4px] tracking-[0%] font-normal">
+                            Apply Now
+                            <span>
+                                <img src="../assets/images/solar_arrow-right-up-broken.png" alt=""
+                                    class="w-4 h-4" />
+                            </span>
+                        </button>
+                    </div>
+                    <div class="md:w-1/4">
+                        <img src="../assets/images/borehole.png" alt="Road Rehabilitation"
+                            class="object-cover w-full h-full" />
+                    </div>
+                </div>
+                <div class="flex flex-col overflow-hidden bg-white rounded-lg md:flex-row">
+                    <div class="md:w-3/4 p-6 border-[1px] border-gray-300">
+                        <h3 class="font-sora font-bold text-[23px] leading-[120%] tracking-[0%] text-[#535353] mb-1">
+                            Construction of Boreholes in Rural Communities
+                        </h3>
+                        <p
+                            class="font-jaka font-normal text-base leading-[22.4px] tracking-[0%] text-[#949494] mb-4 max-w-xl">
+                            Drilling and installation of solar-powered boreholes in 25 rural
+                            communities to provide access to clean water.
+                        </p>
+                        <div class="flex flex-col mb-4 sm:flex-row sm:items-center gap-x-8 gap-y-3">
+                            <div>
+                                <p class="font-jaka font-normal text-base leading-[22.4px] tracking-[0%] text-[#949494]">
+                                    Deadline:
+                                </p>
+                                <p class="font-sora font-normal text-[19px] leading-[26.6px] tracking-[0%] text-[#535353]">
+                                    25 May 2025
+                                </p>
+                            </div>
+                            <div>
+                                <p class="font-jaka font-normal text-base leading-[22.4px] tracking-[0%] text-[#949494]">
+                                    Contract Category:
+                                </p>
+                                <p class="font-sora font-normal text-[19px] leading-[26.6px] tracking-[0%] text-[#535353]">
+                                    Water Engineering / Borehole Drilling Services
+                                </p>
+                            </div>
+                        </div>
+                        <button
+                            class="inline-flex items-center gap-2 bg-[#535353] text-white px-4 py-2 rounded hover:bg-gray-700 font-jaka text-base leading-[22.4px] tracking-[0%] font-normal">
+                            Apply Now
+                            <span>
+                                <img src="../assets/images/solar_arrow-right-up-broken.png" alt=""
+                                    class="w-4 h-4" />
+                            </span>
+                        </button>
+                    </div>
+                    <div class="md:w-1/4">
+                        <img src="../assets/images/borehole.png" alt="Road Rehabilitation"
+                            class="object-cover w-full h-full" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-16 py-12 mx-auto text-center max-w-7xl">
+            <h2 class="text-2xl font-sora font-bold md:text-[40px] leading-[120%] tracking-normal mb-2 text-[#232323]">
+                How it works
+            </h2>
+            <p class="font-jaka font-normal text-base leading-[22.4px] tracking-[0%] text-[#535353] mb-6">
+                Step-by-step direction on how to bid for tenders
+            </p>
+
+            <div class="grid gap-6 md:gap-8 md:grid-cols-3">
+                <!-- Card 1 -->
+                <div class="overflow-hidden bg-white shadow-sm rounded-xl">
+                    <img src="../assets/images/how-it-work.png" alt="Step 3" class="object-cover w-full h-48" />
+                    <div class="p-6 text-left">
+                        <div class="p-1 rounded-[12px] bg-[#D0FFDC] flex w-12 h-6 items-center justify-center text-center">
+                            <p class="font-sora font-normal text-[13px] leading-[120%] tracking-[0%] text-[#02611A]">
+                                STEP 1
+                            </p>
+                        </div>
+
+                        <h3 class="font-sora font-bold text-[19px] leading-[120%] tracking-[0%] text-[#535353] mb-2">
+                            Create an Account to Get Started
+                        </h3>
+                        <p class="font-jaka font-normal text-base leading-[22.4px] tracking-[0%] text-[#535353]">
+                            Fill in your company details and create a secure account to access
+                            tender opportunities.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="overflow-hidden bg-white shadow-sm rounded-xl">
+                    <img src="../assets/images/how-it-work.png" alt="Step 3" class="object-cover w-full h-48" />
+                    <div class="p-6 text-left">
+                        <div class="p-1 rounded-[12px] bg-[#D0FFDC] flex w-12 h-6 items-center justify-center text-center">
+                            <p class="font-sora font-normal text-[13px] leading-[120%] tracking-[0%] text-[#02611A]">
+                                STEP 2
+                            </p>
+                        </div>
+                        <h3 class="font-sora font-bold text-[19px] leading-[120%] tracking-[0%] text-[#535353] mb-2">
+                            Ensure Compliance with Procurement Standards
+                        </h3>
+                        <p class="font-jaka font-normal text-base leading-[22.4px] tracking-[0%] text-[#535353]">
+                            Upload your CAC Certificate, tax clearance, and other relevant documents
+                            for verification.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="overflow-hidden bg-white shadow-sm rounded-xl">
+                    <img src="../assets/images/how-it-work.png" alt="Step 3" class="object-cover w-full h-48" />
+                    <div class="p-6 text-left">
+                        <div class="p-1 rounded-[12px] bg-[#D0FFDC] flex w-12 h-6 items-center justify-center text-center">
+                            <p class="font-sora font-normal text-[13px] leading-[120%] tracking-[0%] text-[#02611A]">
+                                STEP 1
+                            </p>
+                        </div>
+                        <h3 class="font-sora font-bold text-[19px] leading-[120%] tracking-[0%] text-[#535353] mb-2">
+                            Find Projects That Match Your Expertise
+                        </h3>
+                        <p class="font-jaka font-normal text-base leading-[22.4px] tracking-[0%] text-[#535353]">
+                            Read project requirements and submit your proposal directly through the
+                            portal before the deadline.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Use this platform -->
+        <section class="p-16 py-16 bg-green-800">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid items-center gap-4 lg:grid-cols-2">
+                    <!-- Left Content -->
+                    <div class="text-white">
+                        <h2 class="font-sora text-3xl md:text-4xl font-normal leading-[120%] tracking-normal mb-8">
+                            Why Use This Platform?
+                        </h2>
+
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <span class="flex items-center justify-center w-5 h-5 mt-1 mr-3">
+                                    <img src="../assets/images/check.png" alt="bullet"
+                                        class="object-contain w-4 h-4" />
+                                </span>
+                                <p class="text-[23px] font-sora leading-[120%] tracking-normal text-white">
+                                    Transparency
+                                </p>
+                            </li>
+
+                            <li class="flex items-start">
+                                <span class="flex items-center justify-center w-5 h-5 mt-1 mr-3">
+                                    <img src="../assets/images/check.png" alt="bullet"
+                                        class="object-contain w-4 h-4" />
+                                </span>
+                                <p class="text-[23px] font-sora leading-[120%] tracking-normal text-white">
+                                    Fairness
+                                </p>
+                            </li>
+
+                            <li class="flex items-start">
+                                <span class="flex items-center justify-center w-5 h-5 mt-1 mr-3">
+                                    <img src="../assets/images/check.png" alt="bullet"
+                                        class="object-contain w-4 h-4" />
+                                </span>
+                                <p class="text-[23px] font-sora leading-[120%] tracking-normal text-white">
+                                    Real-time Updates
+                                </p>
+                            </li>
+
+                            <li class="flex items-start">
+                                <span class="flex items-center justify-center w-5 h-5 mt-1 mr-3">
+                                    <img src="../assets/images/check.png" alt="bullet"
+                                        class="object-contain w-4 h-4" />
+                                </span>
+                                <p class="text-[23px] font-sora leading-[120%] tracking-normal text-white">
+                                    Easy Access
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Right Image -->
+                    <div class="relative">
+                        <div class="overflow-hidden bg-gray-200 rounded-lg shadow-xl">
+                            <img src="../assets/images/image 2.png"
+                                alt="Three professionals in safety vests discussing work"
+                                class="object-cover w-full h-auto" />
+                        </div>
+
+                        <!-- Optional: Add decorative elements -->
+                        <div class="absolute w-16 h-16 bg-green-400 rounded-full -top-4 -right-4 opacity-30"></div>
+                        <div class="absolute w-24 h-24 bg-green-800 rounded-full -bottom-6 -left-6 opacity-20"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join our community section -->
+        <section class="flex items-center justify-center min-h-screen p-4 bg-green-50">
+            <div class="relative flex items-center w-full max-w-5xl px-8 py-10 text-white bg-green-800 rounded-xl">
+                <!-- Absolutely Positioned Image -->
+                <div class="absolute bottom-0 right-6 md:block">
+                    <img src="../assets/images/contractor.png" alt="Contractor" class="w-auto h-96" />
+                    <!-- Replace the image src with your own -->
+                </div>
+
+                <!-- Text Content -->
+                <div class="z-10 md:w-2/3">
+                    <h2 class="text-2xl font-sora md:text-[33px] leading-[120%] tracking-normal font-normal mb-4">
+                        Join our community of<br />
+                        trusted contractors and suppliers.
+                    </h2>
+                    <p
+                        class="text-sm font-sora md:text-[19px] text-[#F4F4F4] leading-[26.6px] tracking-[0%] mb-6 max-w-md">
+                        Gain instant access to verified opportunities, transparent procurement
+                        processes, and real-time updates — all in one place.
+                    </p>
+                    <a href="#"
+                        class="inline-block px-4 py-2 font-semibold text-green-700 transition bg-white rounded-full hover:bg-green-100">
+                        Get started →
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+@endsection
